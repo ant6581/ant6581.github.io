@@ -8,12 +8,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'A journey in tech',
+  tagline: 'Cyber security is cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://cyber4nt.github.io',
+  url: 'https://ant6581.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ant6581', // Usually your GitHub org/user name.
-  projectName: 'cyber4nt.github.io', // Usually your repo name.
+  projectName: 'ant6581.github.io', // Usually your repo name.
   deploymentBranch: 'deployment',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -64,6 +64,15 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        googleTagManager: {
+          containerId: 'GTM-PQGG83ZH',
+        },
+        sitemap: {
+                  changefreq: 'weekly',
+                  priority: 0.5,
+                  ignorePatterns: ['/tags/**'],
+                  filename: 'sitemap.xml',
+                },
       }),
     ],
   ],
@@ -74,9 +83,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'ant6581',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'A journey in tech',
           src: 'img/logo.svg',
         },
         items: [
@@ -86,26 +95,17 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          {to: '/', label: 'Blog', position: 'left'},
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -137,12 +137,13 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ant6581. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      metadata: [{ name: 'robots', content: 'max-image-preview:large' }],
     }),
 };
 
