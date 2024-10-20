@@ -7,7 +7,7 @@ tags: [hello, docusaurus]
 
 This is the summary of a very long blog post,
 
-Use a test test `<!--` `truncate` `-->` comment to limit blog post size in the list view.
+Use a test test test `<!--` `truncate` `-->` comment to limit blog post size in the list view.
 
 <!-- truncate -->
 
