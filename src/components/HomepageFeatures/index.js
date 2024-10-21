@@ -1,32 +1,35 @@
-import React from 'react';
 import clsx from 'clsx';
+import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Threat Hunting',
-    Svg: require('@site/static/img/th.svg').default,
+    title: 'Easy to Use',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Learn to identify malicious activities within real-world data sets and mitigate potential threats.
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
       </>
     ),
   },
   {
-    title: 'Incident Response',
-    Svg: require('@site/static/img/ir.svg').default,
+    title: 'Focus on What Matters',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Equip yourself with the skills to promptly identify, contain, and manage cyber breaches, minimizing potential damage.
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'Threat Intelligence',
-    Svg: require('@site/static/img/ti.svg').default,
+    title: 'Powered by React',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Acquire a deeper understanding of the most recent cyber risks and stay updated on the activities of adversary groups in the digital realm.
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
       </>
     ),
   },
@@ -39,7 +42,7 @@ function Feature({Svg, title, description}) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
