@@ -6,51 +6,25 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #27428B;
-  --ifm-color-primary-dark: #122664;
-  --ifm-color-primary-darker: #07153E;
-  --ifm-color-primary-darkest: #020717;
-  --ifm-color-primary-light: #4D6AB2;
-  --ifm-color-primary-lighter: #8EA6D8;
-  --ifm-color-primary-lightest: #E8F0FF;
+  --ifm-color-primary: #357edd; /* Blue */
+  --ifm-color-primary-dark: #2f6cc9; /* Darker blue */
+  --ifm-color-primary-darker: #2b61b8; /* Even darker blue */
+  --ifm-color-primary-darkest: #244f94; /* Darkest blue */
+  --ifm-color-primary-light: #4c8eff; /* Lighter blue */
+  --ifm-color-primary-lighter: #5a9aff; /* Even lighter blue */
+  --ifm-color-primary-lightest: #69a6ff; /* Lightest blue */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --tech-bg-color: #D0EFFF; 
-  --cyber-security-bg-color: #D4EFD9; 
-  --icon-color: #27428B;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #4f83cc; /* Soft blue for primary elements */
-  --ifm-color-primary-dark: #4072b0; /* Darker shade of blue */
-  --ifm-color-primary-darker: #345e94; /* Even darker blue for depth */
-  --ifm-color-primary-darkest: #294c78; /* Very dark blue for contrast */
-  --ifm-color-primary-light: #5a93d8; /* Lighter blue for highlights */
-  --ifm-color-primary-lighter: #6ba3e0; /* Even lighter blue */
-  --ifm-color-primary-lightest: #7cb3e8; /* Softest blue for light areas */
-  --docusaurus-highlighted-code-line-bg: rgba(50, 50, 50, 0.3); /* Darker for highlighted code lines */
-  --tech-bg-color: #4A90E2; 
-  --cyber-security-bg-color: #3CA371; 
-  --icon-color: #4F83CC;
-}
-
-
-.hero {
-    background-image: url("/static/img/background.jpg");
-    background-size: cover;  /* Adjust this percentage as needed */
-    background-repeat: no-repeat;
-    background-position: right center;  /* This will center the image */
-    position: relative;  /* Ensure the .hero element is positioned relatively */
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: -1;
+  --ifm-color-primary: #4a90e2; /* Dark mode blue */
+  --ifm-color-primary-dark: #407fc6; /* Darker blue in dark mode */
+  --ifm-color-primary-darker: #386fb0; /* Even darker blue in dark mode */
+  --ifm-color-primary-darkest: #2d5991; /* Darkest blue in dark mode */
+  --ifm-color-primary-light: #5fa3f3; /* Lighter blue in dark mode */
+  --ifm-color-primary-lighter: #73b1ff; /* Even lighter blue in dark mode */
+  --ifm-color-primary-lightest: #8fbfff; /* Lightest blue in dark mode */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
