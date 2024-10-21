@@ -37,7 +37,7 @@
 
 
 .hero {
-    background-image: url("/static/img/docusaurus.png");
+    background-image: url("/static/img/background.jpg");
     background-size: cover;  /* Adjust this percentage as needed */
     background-repeat: no-repeat;
     background-position: right center;  /* This will center the image */
