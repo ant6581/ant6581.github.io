@@ -4,13 +4,13 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
+  "title": "A journey in tech",
+  "tagline": "Cyber security is cool",
   "favicon": "img/favicon.ico",
-  "url": "https://cyber4nt.github.io",
+  "url": "https://ant6581.github.io",
   "baseUrl": "/",
   "organizationName": "ant6581",
-  "projectName": "cyber4nt.github.io",
+  "projectName": "ant6581.github.io",
   "deploymentBranch": "deployment",
   "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
@@ -26,26 +26,26 @@ export default {
     [
       "classic",
       {
-        "docs": {
-          "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
-        },
+        "docs": false,
         "blog": {
+          "routeBasePath": "/",
           "showReadingTime": true,
-          "feedOptions": {
-            "type": [
-              "rss",
-              "atom"
-            ],
-            "xslt": true
-          },
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          "onInlineTags": "warn",
-          "onInlineAuthors": "warn",
-          "onUntruncatedBlogPosts": "warn"
+          "blogSidebarTitle": "All posts",
+          "blogSidebarCount": "ALL"
         },
         "theme": {
           "customCss": "./src/css/custom.css"
+        },
+        "googleTagManager": {
+          "containerId": "GTM-PQGG83ZH"
+        },
+        "sitemap": {
+          "changefreq": "weekly",
+          "priority": 0.5,
+          "ignorePatterns": [
+            "/tags/**"
+          ],
+          "filename": "sitemap.xml"
         }
       }
     ]
@@ -53,27 +53,16 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "My Site",
+      "title": "ant6581",
       "logo": {
-        "alt": "My Site Logo",
+        "alt": "A journey in tech",
         "src": "img/logo.svg"
       },
       "items": [
         {
-          "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
-          "position": "left",
-          "label": "Tutorial"
-        },
-        {
           "to": "/blog",
           "label": "Blog",
           "position": "left"
-        },
-        {
-          "href": "https://github.com/facebook/docusaurus",
-          "label": "GitHub",
-          "position": "right"
         }
       ],
       "hideOnScroll": false
@@ -81,15 +70,6 @@ export default {
     "footer": {
       "style": "dark",
       "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
         {
           "title": "Community",
           "items": [
@@ -121,7 +101,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2024 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2024 ant6581. Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -327,6 +307,12 @@ export default {
         }
       ]
     },
+    "metadata": [
+      {
+        "name": "robots",
+        "content": "max-image-preview:large"
+      }
+    ],
     "colorMode": {
       "defaultMode": "light",
       "disableSwitch": false,
@@ -344,7 +330,6 @@ export default {
         "groupByYear": true
       }
     },
-    "metadata": [],
     "tableOfContents": {
       "minHeadingLevel": 2,
       "maxHeadingLevel": 3

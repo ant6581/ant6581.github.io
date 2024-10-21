@@ -1,0 +1,54 @@
+"use strict";(self.webpackChunkcyber_4_nt=self.webpackChunkcyber_4_nt||[]).push([[867],{778:(e,t,s)=>{s.r(t),s.d(t,{default:()=>f});s(6540);var o=s(4164),n=s(1213),r=s(7559),i=s(6461),a=s(8774),l=s(4096),c=s(2153),d=s(7713),h=s(1463),g=s(3892),u=s(6913),p=s(4848);function m(e){let{author:t}=e;const s=(0,i.wI)(t);return(0,p.jsxs)(p.Fragment,{children:[(0,p.jsx)(n.be,{title:s}),(0,p.jsx)(h.A,{tag:"blog_authors_posts"})]})}function x(){const{authorsListPath:e}=(0,l.x)();return(0,p.jsx)(a.A,{href:e,children:(0,p.jsx)(i.np,{})})}function b(e){let{author:t,items:s,sidebar:o,listMetadata:n}=e;return(0,p.jsxs)(c.A,{sidebar:o,children:[(0,p.jsxs)("header",{className:"margin-bottom--xl",children:[(0,p.jsx)(u.A,{as:"h1",author:t}),t.description&&(0,p.jsx)("p",{children:t.description}),(0,p.jsx)(x,{})]}),(0,p.jsx)("hr",{}),(0,p.jsx)(g.A,{items:s}),(0,p.jsx)(d.A,{metadata:n})]})}function f(e){return(0,p.jsxs)(n.e3,{className:(0,o.A)(r.G.wrapper.blogPages,r.G.page.blogAuthorsPostsPage),children:[(0,p.jsx)(m,{...e}),(0,p.jsx)(b,{...e})]})}},7713:(e,t,s)=>{s.d(t,{A:()=>i});s(6540);var o=s(1312),n=s(9022),r=s(4848);function i(e){const{metadata:t}=e,{previousPage:s,nextPage:i}=t;return(0,r.jsxs)("nav",{className:"pagination-nav","aria-label":(0,o.T)({id:"theme.blog.paginator.navAriaLabel",message:"Blog list page navigation",description:"The ARIA label for the blog pagination"}),children:[s&&(0,r.jsx)(n.A,{permalink:s,title:(0,r.jsx)(o.A,{id:"theme.blog.paginator.newerEntries",description:"The label used to navigate to the newer blog posts page (previous page)",children:"Newer entries"})}),i&&(0,r.jsx)(n.A,{permalink:i,title:(0,r.jsx)(o.A,{id:"theme.blog.paginator.olderEntries",description:"The label used to navigate to the older blog posts page (next page)",children:"Older entries"}),isNext:!0})]})}},3892:(e,t,s)=>{s.d(t,{A:()=>i});s(6540);var o=s(4096),n=s(2541),r=s(4848);function i(e){let{items:t,component:s=n.A}=e;return(0,r.jsx)(r.Fragment,{children:t.map((e=>{let{content:t}=e;return(0,r.jsx)(o.in,{content:t,children:(0,r.jsx)(s,{children:(0,r.jsx)(t,{})})},t.metadata.permalink)}))})}},6461:(e,t,s)=>{s.d(t,{ZD:()=>a,np:()=>d,uz:()=>c,wI:()=>l});s(6540);var o=s(1312),n=s(3465),r=s(4848);function i(){const{selectMessage:e}=(0,n.W)();return t=>e(t,(0,o.T)({id:"theme.blog.post.plurals",description:'Pluralized label for "{count} posts". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',message:"One post|{count} posts"},{count:t}))}function a(e){const t=i();return(0,o.T)({id:"theme.blog.tagTitle",description:"The title of the page for a blog tag",message:'{nPosts} tagged with "{tagName}"'},{nPosts:t(e.count),tagName:e.label})}function l(e){const t=i();return(0,o.T)({id:"theme.blog.author.pageTitle",description:"The title of the page for a blog author",message:"{authorName} - {nPosts}"},{nPosts:t(e.count),authorName:e.name||e.key})}const c=()=>(0,o.T)({id:"theme.blog.authorsList.pageTitle",message:"Authors",description:"The title of the authors page"});function d(){return(0,r.jsx)(o.A,{id:"theme.blog.authorsList.viewAll",description:"The label of the link targeting the blog authors page",children:"View all authors"})}},2153:(e,t,s)=>{s.d(t,{A:()=>b});s(6540);var o=s(4164),n=s(5596),r=s(9274),i=s(3540),a=s(5604),l=s(4848);const c=i.Ay.div`
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+`,d=i.Ay.h1`
+  color: var(--ifm-font-color-base); // Use the base font color
+  font-size: 1.5em; // Adjust font size similar to blog titles
+  margin-bottom: 20px;
+  text-align: left; // Align text to the left
+  font-family: var(--ifm-font-family-base); // Use the base font family
+`,h=i.Ay.hr`
+  border: 0;
+  height: 1px;
+  background: #e0e0e0; // You can adjust the color as needed
+  margin-bottom: 20px; // Adjust spacing as needed
+`,g=i.Ay.div`
+  font-size: var(--ifm-font-size-base); // Use the base font size
+  color: var(--ifm-font-color-base); // Use the secondary font color
+  line-height: 1.6; // Adjust line height to match blog content
+  font-family: var(--ifm-font-family-base); // Use the base font family
+`,u=i.Ay.li`
+  margin-bottom: 15px;
+  list-style-type: disc; // Adds bullet points
+  padding-left: 20px; // Adds space before the bullet point
+`,p=i.Ay.a`
+  color: var(--icon-color); /* Use CSS variable for color */
+  margin-right: 10px;
+  margin-left: 10px;
+  &:hover {
+    text-decoration: underline;
+    color: #1A3D7C; 
+  }
+`,m=i.Ay.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+`;const x=function(){return(0,l.jsxs)(c,{children:[(0,l.jsx)(d,{children:"Defending digital assets."}),(0,l.jsxs)(g,{children:[(0,l.jsx)("p",{children:"\ud83d\udd90\ufe0f Hey, I'm Elias, a Cyber Security Engineer."}),(0,l.jsxs)("p",{children:["I am fascinated by ",(0,l.jsx)("span",{style:{backgroundColor:"var(--tech-bg-color)"},children:"tech"}),", in love with ",(0,l.jsx)("span",{style:{backgroundColor:"var(--cyber-security-bg-color)"},children:"cyber security"}),". Switched roles to understand how everything works from the inside. "]}),(0,l.jsx)("p",{children:"What I do:"}),(0,l.jsxs)("ul",{children:[(0,l.jsxs)(u,{children:[(0,l.jsx)("strong",{children:"Cyber Security"}),(0,l.jsx)("br",{}),"Raw logs \u27a1\ufe0f Clear, actionable reports"]}),(0,l.jsxs)(u,{children:[(0,l.jsx)("strong",{children:"Cloud"}),(0,l.jsx)("br",{}),"Building secure, scalable cloud solutions \ud83d\udca8"]}),(0,l.jsxs)(u,{children:[(0,l.jsx)("strong",{children:"Python and Automation"}),(0,l.jsx)("br",{}),"Coding and stuff \ud83d\udcbe"]}),(0,l.jsxs)(u,{children:[(0,l.jsx)("strong",{children:"Ambient and Hiking"}),(0,l.jsx)("br",{}),"Balance and inspiration \ud83c\udfde\ufe0f"]})]}),(0,l.jsx)("p",{children:"Join me on this exciting journey!"}),(0,l.jsxs)(m,{children:[(0,l.jsx)(p,{href:"/cv",children:(0,l.jsx)(a.t69,{size:25})}),(0,l.jsx)(p,{href:"https://gitlab.com/ant6581",children:(0,l.jsx)(a.xj1,{size:25})}),(0,l.jsx)(p,{href:"https://t.me/Elias_6581",children:(0,l.jsx)(a.hFS,{size:25})}),(0,l.jsx)(p,{href:"https://twitter.com/cyber4nt_x",children:(0,l.jsx)(a.feZ,{size:25})}),(0,l.jsx)(p,{href:"mailto:cyber4nt@gmail.com",children:(0,l.jsx)(a.maD,{size:25})}),(0,l.jsx)(p,{href:"https://cy.linkedin.com/in/ilias-antoniadis",children:(0,l.jsx)(a.QEs,{size:25})})]})]}),(0,l.jsx)(h,{})]})};function b(e){const{sidebar:t,toc:s,children:i,isBlogListPage:a,...c}=e,d=t&&t.items.length>0;return(0,l.jsxs)(n.A,{...c,children:[!0===a&&(0,l.jsx)(x,{}),(0,l.jsx)("div",{className:"container margin-vert--lg",children:(0,l.jsxs)("div",{className:"row",children:[(0,l.jsx)(r.A,{sidebar:t}),(0,l.jsx)("main",{className:(0,o.A)("col",{"col--7":d,"col--9 col--offset-1":!d}),itemScope:!0,itemType:"https://schema.org/Blog",children:i}),s&&(0,l.jsx)("div",{className:"col col--2",children:s})]})})]})}},7931:(e,t,s)=>{s.d(t,{A:()=>_});var o=s(6540),n=s(4164),r=s(8478),i=s(4096),a=s(1943),l=s(2053),c=s(1312),d=s(8774),h=s(4848);function g(){return(0,h.jsx)("b",{children:(0,h.jsx)(c.A,{id:"theme.blog.post.readMore",description:"The label used in blog post item excerpts to link to full blog posts",children:"Read More"})})}function u(e){const{blogPostTitle:t,...s}=e;return(0,h.jsx)(d.A,{"aria-label":(0,c.T)({message:"Read more about {title}",id:"theme.blog.post.readMoreLabel",description:"The ARIA label for the link to full blog posts from excerpts"},{title:t}),...s,children:(0,h.jsx)(g,{})})}const p={blogPostFooterDetailsFull:"blogPostFooterDetailsFull_Wr5y"};function m(){return(0,h.jsx)("hr",{style:{backgroundColor:"#e0e0e0",height:1}})}var x=s(223),b=s(1884);const f={apiKey:process.env.FIREBASE_API_KEY,authDomain:process.env.FIREBASE_AUTH_DOMAIN,projectId:process.env.FIREBASE_PROJECT_ID,storageBucket:process.env.FIREBASE_STORAGE_BUCKET,messagingSenderId:process.env.FIREBASE_MESSAGING_SENDER_ID,appId:process.env.FIREBASE_APP_ID,measurementId:process.env.FIREBASE_MEASUREMENT_ID},j=((0,x.Wp)(f),(0,b.aU)()),A="reactions";function y(e,t){const s=(0,b.H9)(j,A,e);(0,b.BN)(s,t).catch((e=>{console.log(e)}))}const v=e=>"@ovisly-blog-reactions-"+e;function E(e,t,s){const o=v(e),n=localStorage.getItem(o),r=JSON.parse(n);r[t]=s,localStorage.setItem(o,JSON.stringify(r))}var k=s(3540);const S=k.Ay.button`
+  background: #e8f5e9;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  color: #424242;
+  margin: 0.1em 0.3em;
+  padding: 0.24em 0.6em;
+`,I=k.Ay.button`
+  background: transparent;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  color: #9e9e9e;
+  margin: 0.1em 0.3em;
+  padding: 0.24em 0.6em;
+`;function N(e){let{slug:t,title:s,reaction:o,reactionCounts:n,setReactionCounts:r}=e;const i=function(e,t){const s=v(e),o=localStorage.getItem(s);if(null===o){const e={};return e[t]=!1,localStorage.setItem(s,JSON.stringify(e)),!1}{const e=JSON.parse(o);return Object.keys(e).includes(t)?e[t]:(e[t]=!1,localStorage.setItem(s,JSON.stringify(e)),!1)}}(t,o),a=i?S:I;return(0,h.jsx)(a,{title:s,onClick:()=>{const e={...n};i?(e[o]=e[o]-1,E(t,o,!1)):(e[o]=e[o]+1,E(t,o,!0)),r((()=>e)),y(t,e)},type:"button",children:`${o} ${n[o]}`})}function T(e){let{reactions:t,slug:s}=e;const[n,r]=(0,o.useState)(function(e){const t={};return e.forEach((e=>t[e]=0)),t}(Object.keys(t)));return(0,o.useEffect)((()=>{!function(e,t,s){(0,b.x7)((0,b.H9)(j,A,e)).then((o=>{if(o.exists()){const e=o.data();Object.keys(t).forEach((t=>{Object.keys(e).includes(t)||(e[t]=0)})),s(e)}else y(e,t)})).catch((e=>{console.log("[initializeReactionCountsFromDB] error:",e)}))}(s,n,r)}),[]),(0,h.jsx)("footer",{className:"row",children:(0,h.jsxs)("div",{className:"col",children:[(0,h.jsx)("b",{children:Object.keys(t).length>0?"Reactions:  ":""}),Object.keys(t).map((e=>(0,h.jsx)(N,{slug:s,reaction:e,title:t[e],reactionCounts:n,setReactionCounts:r},e)))]})})}function _(){const{metadata:e,isBlogPostPage:t}=(0,i.e7)(),{tags:s,title:o,editUrl:c,hasTruncateMarker:d}=e,g=!t&&d,x=s.length>0,b=x||g||c,f=Object.keys(e.frontMatter).includes("reactions")?e.frontMatter.reactions:[],j=e.frontMatter.slug;return b?(0,h.jsxs)("div",{children:[(0,h.jsxs)("footer",{className:(0,n.A)("row docusaurus-mt-lg",t&&p.blogPostFooterDetailsFull),children:[x&&(0,h.jsx)("div",{className:(0,n.A)("col",{"col--9":g}),children:(0,h.jsx)(l.A,{tags:s})}),(0,h.jsx)(r.A,{children:()=>(0,h.jsx)("div",{className:(0,n.A)("col",{"col--9":g}),children:(0,h.jsx)(T,{reactions:f,slug:j})})}),t&&c&&(0,h.jsx)("div",{className:"col margin-top--sm",children:(0,h.jsx)(a.A,{editUrl:c})}),g&&(0,h.jsx)("div",{className:(0,n.A)("col text--right",{"col--3":x}),children:(0,h.jsx)(u,{blogPostTitle:o,to:e.permalink})})]}),!t&&(0,h.jsx)(m,{})]}):null}}}]);
